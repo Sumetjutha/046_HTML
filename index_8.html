@@ -15,6 +15,7 @@
           name="fname"
           placeholder="ป้อนชื่อของคุณ (ก-ฮ)"
           value="John Tik"
+          required
         />
       </div>
       <br />
@@ -27,7 +28,7 @@
 
       <div>
         <label for="email">อีเมลล์</label>
-        <input type="email" name="email" />
+        <input type="email" name="email" required />
       </div>
       <br />
 
@@ -39,13 +40,15 @@
 
       <div>
         <label for="">ที่อยู่</label>
-        <textarea name="" cols="20" rows="5"></textarea>
+        <textarea name="" cols="20" rows="5" readonly>
+          fsdfsdfdsf
+        </textarea>
       </div>
       <br />
 
       <div>
         <label for="">อายุ</label>
-        <input type="number" name="age" min="0" max="10" value="2" />
+        <input type="number" name="age" min="0" max="10" value="2" readonly />
       </div>
       <br />
 
@@ -111,6 +114,15 @@
         <label for="website">เว็บไซต์</label>
         <input type="url" />
       </div>
+      <br />
+
+      <div>
+        <input type="submit" value="บันทึกข้อมูล" />
+        <button type="submit">แสดงข้อมูล</button>
+      </div>
+      <br />
+
+      <div><input type="reset" / value="ล้างข้อมูล"></div>
       <br />
     </form>
   </body>
